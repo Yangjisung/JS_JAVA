@@ -28,9 +28,9 @@ public class Ex5_1 {
 		
 		// 3.배열의 출력
 		int [] iArr = {100, 90, 80, 70, 60}; // iArr.length = 5
-//		for(int i=0; i<iArr.length; i++) {
-//			System.out.println(iArr[i]);
-//		} //for 문
+		for(int i=0; i<iArr.length; i++) {
+			System.out.println(iArr[i]);
+		} //for 문
 		
 		System.out.println(Arrays.toString(iArr));
 	}
