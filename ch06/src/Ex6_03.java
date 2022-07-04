@@ -1,9 +1,9 @@
-
+// 6-3번 getTotal(), getAverage() 를 추가하시오 (매개변수 없음.)
 public class Ex6_03 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		junyp s = new junyp();
+		student2 s = new student2();
 		s.name = "홍길동";
 		s.ban = 1;
 		s.no = 1;
@@ -16,7 +16,7 @@ public class Ex6_03 {
 		System.out.println("평균 : " + s.getAverage());
 	} // main
 } // ex6_03
-class junyp {
+class student2 {
 	String name;
 	int ban;
 	int no;
@@ -27,9 +27,9 @@ class junyp {
 	public int getTotal() {
 		return kor + eng + math;
 	}
-	public float getAverage( ) {
-		float aver = (float)(kor + eng + math) /3;
-		return (float)(Math.round(aver*10)/10.0);
+	public float getAverage() {
+		float aver = (float)(getTotal()) / 3; // aver = 78.6666..7
+		return (float)(Math.round(aver*10)/10.0); // aver * 10 = 786.666..7 -> 787.0 / 10.0 = 78.7
 	}
-} // 준엽
+} // student2
 
